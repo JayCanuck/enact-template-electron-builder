@@ -27,7 +27,7 @@ Additionally, there is added support for a special `buildDependencies` array opt
 A key feature of this template's default configuration is support for automated builds cross-platform for versioned releases.
 
 **Setup**
-* Enable (Travis-CI)[https://travis-ci.org] for your project repository.
+* Enable [Travis-CI](https://travis-ci.org) for your project repository.
 * Create a new GitHub access token [from here](https://github.com/settings/tokens/new). It can be called anything, but much have the `repo` tree of access checkboxed. This will generate a key value for you.
 * On the Travis webpage for your repository, go to the 'Settings' section and set a new environment variable named `GH_TOKEN` with the value of the key you just generated.
 
