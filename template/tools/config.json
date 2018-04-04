@@ -1,0 +1,36 @@
+{
+	"appId": "com.example.myapp",
+	"productName": "MyApp",
+	"copyright": "Copyright © YEAR AUTHOR",
+	"directories": {
+		"buildResources": "tools/assets",
+		"output": "bin"
+	},
+	"remoteBuild": false,
+	"files": [
+		"!renderer{,/**/*}",
+		"!tools{,/**/*}"
+	],
+	"extraMetadata": {
+		"buildDependencies": [
+			"electron-updater"
+		]
+	},
+	"linux": {
+		"target": [
+			{"target": "AppImage"},
+			{"target": "deb"}
+		]
+	},
+	"nsis": {
+		"oneClick": false,
+		"allowToChangeInstallationDirectory": true
+	},
+	"publish": [
+		{
+			"provider": "github",
+			"vPrefixedTagName": false,
+			"releaseType": "draft"
+		}
+	]
+}

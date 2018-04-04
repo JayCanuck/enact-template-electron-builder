@@ -1,0 +1,59 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A specialized template for an Enact Electron application.",
+  "homepage": "http://example.com",
+  "author": "",
+  "main": "main/index.js",
+  "browser": "renderer/index.js",
+  "scripts": {
+    "serve": "nf --procfile tools/Procfile start",
+    "pack": "enact pack -o renderer-dist",
+    "pack-p": "enact pack -p -o renderer-dist",
+    "watch": "enact pack --watch -o renderer-dist",
+    "electron": "electron main",
+    "build": "node tools/build.js",
+    "clean": "enact clean bin renderer-dist",
+    "lint": "enact lint -- --env=browser,node .",
+    "license": "enact license",
+    "test": "enact test start --single-run",
+    "test-watch": "enact test start"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": "https://github.com/JayCanuck/electron-builder-test-app",
+  "enact": {
+    "theme": "moonstone",
+    "target": "electron-renderer"
+  },
+  "eslintConfig": {
+    "extends": "enact",
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/*",
+    "build/*",
+    "dist/*",
+    "bin/*"
+  ],
+  "dependencies": {
+    "@enact/core": ">=2.0.0-alpha <2.0.0",
+    "@enact/i18n": ">=2.0.0-alpha <2.0.0",
+    "@enact/moonstone": ">=2.0.0-alpha <2.0.0",
+    "@enact/spotlight": ">=2.0.0-alpha <2.0.0",
+    "@enact/ui": ">=2.0.0-alpha <2.0.0",
+    "@enact/webos": ">=2.0.0-alpha <2.0.05",
+    "electron-updater": "^2.21.4",
+    "prop-types": "15.6.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.8.1",
+    "electron": "^1.0.0",
+    "foreman": "^2.0.0"
+  }
+}
