@@ -1,6 +1,6 @@
 {
   "name": "enact-template-electron-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A template generator for Enact Electron-Builder applications.",
   "main": "index.js",
   "author": "Jason Robitaille",
