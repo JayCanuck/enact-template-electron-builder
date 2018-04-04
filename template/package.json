@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A specialized template for an Enact Electron application.",
   "homepage": "http://example.com",
-  "author": "",
+  "author": "AUTHOR <email@example.com>",
   "main": "main/index.js",
   "browser": "renderer/index.js",
   "scripts": {

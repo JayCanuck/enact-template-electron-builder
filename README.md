@@ -1,4 +1,4 @@
-# enact-template-electron-builder
+# enact-template-electron-builder [![Travis](https://img.shields.io/travis/JayCanuck/enact-template-electron-builder/master.svg)](https://travis-ci.org/JayCanuck/enact-template-electron-builder) [![NPM](https://img.shields.io/npm/v/enact-template-electron-builder.svg)](https://www.npmjs.com/package/enact-template-electron-builder)
 
 A template generator for @enact/cli to create Enact-based Electron applications. Unlike the [official template](https://github.com/enactjs/templates/tree/develop/packages/electron), this alternative uses `electron-builder` with a more customized and specific workflow that may not suit everyone's needs.
 
